@@ -239,9 +239,14 @@ async function doExport(): Promise<BuildResult[]> {
       exportFlag = EXPORT_DEBUG ? '--export-debug' : '--export';
     }
 
-    let args = [GODOT_PROJECT_FILE_PATH, '--headless', exportFlag, preset.name, executablePath];
+    let args_v4 = [GODOT_PROJECT_FILE_PATH, '--headless', exportFlag, preset.name, executablePath];
+    let args_v3 = [GODOT_PROJECT_FILE_PATH, '--no-window', exportFlag, preset.name, executablePath];
+    let args = [];
     if (USE_GODOT_3) {
-      args = args.filter(x => x !== '--headless');
+      args = args_v3;
+    }
+    else {
+      args = args_v4;
     }
     if (GODOT_VERBOSE) {
       args.push('--verbose');
