@@ -17,7 +17,7 @@ jobs:
           echo "WINE_PATH=$(which wine64)" >> $GITHUB_OUTPUT
       - name: export game
         id: export
-        uses: firebelley/godot-export@v5.2.0
+        uses: eumario/godot-export@v5.2.1
         with:
           use_godot_3: true
           godot_executable_download_url: https://github.com/godotengine/godot-builds/releases/download/3.5.3-stable/Godot_v3.5.3-stable_mono_x11_64.zip
