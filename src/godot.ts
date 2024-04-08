@@ -244,8 +244,7 @@ async function doExport(): Promise<BuildResult[]> {
     let args = [];
     if (USE_GODOT_3) {
       args = ARGS_V3;
-    }
-    else {
+    } else {
       args = ARGS_V4;
     }
     if (GODOT_VERBOSE) {
