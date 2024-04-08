@@ -3,7 +3,6 @@ using Godot.Sharp.Extras;
 
 public class Main : Control
 {
-    [NodePath] private Control _control;
     [NodePath] private Label _label;
     
     public override void _Ready()

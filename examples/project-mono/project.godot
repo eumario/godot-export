@@ -18,6 +18,10 @@ config/name="ActionsTest"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[mono]
+
+project/assembly_name="ActionsTest"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
