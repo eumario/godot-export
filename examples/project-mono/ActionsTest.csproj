@@ -5,6 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <PackageReference Include="GodotSharpExtras" Version="0.3.4" />
   </ItemGroup>
   <ItemGroup />
 </Project>
